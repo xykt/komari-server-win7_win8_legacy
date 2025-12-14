@@ -34,6 +34,6 @@
 - 手动安装
 1. 下载对应的komari主控端二进制文件（[komari_386_legacy](https://github.com/xykt/komari-server-win7_win8_legacy/releases/latest/download/komari_386_legacy.exe)32位或[komari_amd64_legacy](https://github.com/xykt/komari-server-win7_win8_legacy/releases/latest/download/komari_amd64_legacy.exe)64位）到C:\Program Files\Komari，重命名komari.exe
 2. 下载[tools/nssm.exe](https://github.com/xykt/komari-server-win7_win8_legacy/raw/refs/heads/main/tools/nssm.exe)
-3. 打开cmd命令行，```cd 'C:\Program Files\Komari'```进入目录，执行```mkdir data && echo {} > data\komari.json```，执行```./komari.exe server -l 0.0.0.0:[服务监听端口]```（注意替换你的端口），在出现的一系列文字中，找到“Username: admin , Password: Y34ekYb0unvM”文字，记录（注意Password后面如果出现箭头⬅请不要拷贝箭头和右边的内容），Ctrl+C结束进程
+3. 打开cmd命令行，```cd 'C:\Program Files\Komari'```进入目录，执行```mkdir data && echo {} > data\komari.json```，执行```./komari.exe server -l 0.0.0.0:[服务监听端口]```（注意替换你的端口），在出现的一系列文字中，找到“Username: admin , Password: ************”文字，记录（注意Password后面如果出现箭头⬅请不要拷贝箭头和右边的内容），Ctrl+C结束进程
 4. 命令行执行```nssm install "Komari Server Service" "C:\Program Files\Komari\komari.exe" server -l 0.0.0.0:[服务监听端口]```（注意替换你的端口），然后执行```nssm set "Komari Server Service" AppEnvironmentExtra GIN_MODE=release```
 5. 键盘Win+R，运行services.msc，找到Komari Server Service，右键属性，启动类型选自动，点启动，确认
