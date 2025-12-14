@@ -13,8 +13,8 @@
 | Windows 7        | ✖ | ✔ | ✔ |
 | Windows 8        | ✖ | ✔ | ✔ |
 | Windows 8.1      | ✖ | ✔ | ✔ |
-| Windows 10       | ✔ | ✔ | ✔ |
-| Windows 11       | ✔ | ✔ | ✔ |
+| Windows 10       | ✔ | ✔（不建议） | ✔（不建议） |
+| Windows 11       | ✔ | ✔（不建议） | ✔（不建议） |
 
 ### Windows Server支援
 | Windows Server 版本      | 原生[komari主控端](https://github.com/komari-monitor/komari/releases)  | [komari_386_legacy](https://github.com/xykt/komari-server-win7_win8_legacy/releases/latest/download/komari_386_legacy.exe)（32位） | [komari_amd64_legacy](https://github.com/xykt/komari-server-win7_win8_legacy/releases/latest/download/komari_amd64_legacy.exe)（64位）|
@@ -23,11 +23,11 @@
 | Windows Server 2008    | ✖ | ✔ | ✖ |
 | Windows Server 2008 R2 | ✖ | ✔ | ✔ |
 | Windows Server 2012    | ✖ | ✔ | ✔ |
-| Windows Server 2016    | ✔ | ✔ | ✔ |
-| Windows Server 2019    | ✔ | ✔ | ✔ |
-| Windows Server 2022    | ✔ | ✔ | ✔ |
+| Windows Server 2016    | ✔ | ✔（不建议） | ✔（不建议） |
+| Windows Server 2019    | ✔ | ✔（不建议） | ✔（不建议） |
+| Windows Server 2022    | ✔ | ✔（不建议） | ✔（不建议） |
 
-本编译版解决了原生兼容性问题，支持在Win7 / Win8全系列系统上运行komari-agent
+本编译版解决了原生兼容性问题，支持在Win7 / Win8全系列系统上运行komari主控端
 <img width="1620" height="680" alt="image" src="https://github.com/user-attachments/assets/73f9cff8-c699-4159-9a6d-0a2ddf5251fb" />
 
 # 安装方法
