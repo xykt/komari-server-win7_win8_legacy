@@ -37,3 +37,4 @@
 3. 打开cmd命令行，```cd 'C:\Program Files\Komari'```进入目录，执行```mkdir data && echo {} > data\komari.json```，执行```./komari.exe server -l 0.0.0.0:[服务监听端口]```（注意替换你的端口），在出现的一系列文字中，找到“Username: admin , Password: ************”文字，记录（注意Password后面如果出现箭头⬅请不要拷贝箭头和右边的内容），Ctrl+C结束进程
 4. 命令行执行```nssm install "Komari Server Service" "C:\Program Files\Komari\komari.exe" server -l 0.0.0.0:[服务监听端口]```（注意替换你的端口），然后执行```nssm set "Komari Server Service" AppEnvironmentExtra GIN_MODE=release```
 5. 键盘Win+R，运行services.msc，找到Komari Server Service，右键属性，启动类型选自动，点启动，确认
+6. 本地电脑：用 http://localhost:[服务监听端口] 或 http://127.0.0.1:[服务监听端口]；远程服务器：把 <你的服务器IP> 换成服务器的公网 IP，比如 http://[你的服务器IP]:[服务监听端口]。进去以后使用你刚才记录的用户名密码登录
